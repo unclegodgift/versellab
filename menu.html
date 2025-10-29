@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pasta La Vista</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .menu-category {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold title-font text-red-600">Pasta La Vista</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-red-600 transition-all">Home</a>
+                    <a href="menu.html" class="text-red-600 font-semibold border-b-2 border-red-600">Menu</a>
+                    <a href="order.html" class="text-gray-600 hover:text-red-600 transition-all">Order</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-4xl md:text-5xl font-bold mb-4 text-gray-800">Our Menu</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Authentic Italian dishes made with the finest ingredients and traditional recipes.</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories Navigation -->
+    <div class="sticky top-16 bg-white shadow-sm z-40">
+        <div class="container mx-auto px-6 overflow-x-auto">
+            <div class="flex space-x-6 py-4">
+                <a href="#antipasti" class="whitespace-nowrap text-red-600 font-medium">Antipasti</a>
+                <a href="#pasta" class="whitespace-nowrap text-gray-600 hover:text-red-600 transition-all">Pasta</a>
+                <a href="#pizza" class="whitespace-nowrap text-gray-600 hover:text-red-600 transition-all">Pizza</a>
+                <a href="#secondi" class="whitespace-nowrap text-gray-600 hover:text-red-600 transition-all">Secondi</a>
+                <a href="#dolci" class="whitespace-nowrap text-gray-600 hover:text-red-600 transition-all">Dolci</a>
+                <a href="#vini" class="whitespace-nowrap text-gray-600 hover:text-red-600 transition-all">Vini</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <!-- Antipasti -->
+            <div id="antipasti" class="menu-category mb-16">
+                <h2 class="title-font text-3xl font-bold mb-8 text-gray-800 border-b pb-2">Antipasti</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Bruschetta al Pomodoro</h3>
+                                <p class="text-gray-600">Toasted bread topped with fresh tomatoes, garlic, basil and olive oil.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$8.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Caprese Salad</h3>
+                                <p class="text-gray-600">Fresh mozzarella, tomatoes, and sweet basil, seasoned with salt and olive oil.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$10.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Calamari Fritti</h3>
+                                <p class="text-gray-600">Lightly fried squid served with marinara sauce and lemon wedges.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Prosciutto e Melone</h3>
+                                <p class="text-gray-600">Thinly sliced cured ham served with fresh cantaloupe.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$11.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta -->
+            <div id="pasta" class="menu-category mb-16">
+                <h2 class="title-font text-3xl font-bold mb-8 text-gray-800 border-b pb-2">Pasta</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Spaghetti Carbonara</h3>
+                                <p class="text-gray-600">Classic Roman pasta with eggs, cheese, pancetta, and black pepper.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$15.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Fettuccine Alfredo</h3>
+                                <p class="text-gray-600">Handmade fettuccine with creamy parmesan sauce.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$14.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Penne all'Arrabbiata</h3>
+                                <p class="text-gray-600">Penne pasta with spicy tomato sauce, garlic, and chili peppers.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$13.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Lasagna Bolognese</h3>
+                                <p class="text-gray-600">Layers of pasta, meat sauce, béchamel, and parmesan cheese.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$16.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza -->
+            <div id="pizza" class="menu-category mb-16">
+                <h2 class="title-font text-3xl font-bold mb-8 text-gray-800 border-b pb-2">Pizza</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Margherita</h3>
+                                <p class="text-gray-600">Tomato sauce, mozzarella, basil, olive oil.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Quattro Formaggi</h3>
+                                <p class="text-gray-600">Four cheese blend: mozzarella, gorgonzola, parmesan, and fontina.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$14.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Diavola</h3>
+                                <p class="text-gray-600">Spicy salami, tomato sauce, mozzarella, chili flakes.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$15.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Prosciutto e Funghi</h3>
+                                <p class="text-gray-600">Tomato sauce, mozzarella, ham, mushrooms.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$16.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dolci -->
+            <div id="dolci" class="menu-category mb-16">
+                <h2 class="title-font text-3xl font-bold mb-8 text-gray-800 border-b pb-2">Dolci</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Tiramisu</h3>
+                                <p class="text-gray-600">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Panna Cotta</h3>
+                                <p class="text-gray-600">Creamy vanilla custard served with berry compote.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$6.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Cannoli Siciliani</h3>
+                                <p class="text-gray-600">Crispy pastry tubes filled with sweet ricotta cream.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$5.99</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-soft">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="title-font text-xl font-bold mb-1">Gelato</h3>
+                                <p class="text-gray-600">Homemade Italian ice cream. Ask for daily flavors.</p>
+                            </div>
+                            <span class="font-bold text-red-600">$4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="title-font text-3xl font-bold mb-6">Ready to taste authentic Italian cuisine?</h2>
+            <a href="order.html" class="inline-block bg-white hover:bg-gray-100 text-red-600 font-bold py-3 px-8 rounded-full transition-all shadow-lg">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Pasta La Vista</h3>
+                    <p class="text-gray-300">123 Culinary Street<br>Flavortown, FT 12345</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Hours</h3>
+                    <p class="text-gray-300">Monday - Sunday<br>11:00 AM - 10:00 PM</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-all"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pasta La Vista. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>feather.replace();</script>
+</body>
+</html>
