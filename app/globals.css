@@ -75,8 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -122,21 +122,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-
-  @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 300 600;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
-  }
-
-  @font-face {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400 700;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
   }
 }
